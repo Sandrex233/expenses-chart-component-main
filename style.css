@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --font-family: 'DM Sans', sans-serif;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+}
+
+.my_balance {
+    position: absolute;
+    background-color: #ff674e;
+    width: 450px;
+    height: 100px;
+    border-radius: 20px;
+
+
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.my_balance-logo {
+
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    border: 2px solid hsl(33, 100%, 98%);
+
+
+
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.my_balance-logo-2 {
+    content: "";
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    background-color: hsl(25, 47%, 15%);
+
+
+    top: 50%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+
+}
+
+.my_balance h2 {
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: hsl(33, 100%, 98%);
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.my_balance h1 {
+    position: absolute;
+    top: 35px;
+    font-size: 25px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: hsl(33, 100%, 98%);
+    margin-left: 30px;
+
+}
+
+.spending {
+    position: absolute;
+    background-color: hsl(33, 100%, 98%);
+    width: 450px;
+    height: 470px;
+    border-radius: 20px;
+    margin-top: 30px;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spending h1 {
+    font-size: 25px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.spending_this-month h2 {
+    position: absolute;
+    top: 77%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+
+}
+
+.spending_this-month h2 span {
+    font-size: 35px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.spending_last-month h2 {
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+
+}
+
+.spending_last-month h2 span {
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+
+    position: absolute;
+    top: -30px;
+    left: 45%;
+
+}
