@@ -20,13 +20,13 @@ body {
 
 .my_balance {
     position: absolute;
-    background-color: #ff674e;
+    background-color: hsl(10, 79%, 65%);
     width: 450px;
     height: 100px;
     border-radius: 20px;
 
 
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -93,7 +93,7 @@ body {
     border-radius: 20px;
     margin-top: 30px;
 
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -156,5 +156,505 @@ body {
     position: absolute;
     top: -30px;
     left: 45%;
+
+}
+
+
+.spending_chart-days {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+
+}
+
+.spending_chart-days-mon {
+    position: absolute;
+    top: 61.5%;
+    left: 10%;
+}
+
+.spending_chart-days-tue {
+    position: absolute;
+    top: 61.5%;
+    left: 22.5%;
+}
+
+.spending_chart-days-wed {
+    position: absolute;
+    top: 61.5%;
+    left: 34%;
+}
+
+.spending_chart-days-thu {
+    position: absolute;
+    top: 61.5%;
+    left: 46.5%;
+}
+
+.spending_chart-days-fri {
+    position: absolute;
+    top: 61.5%;
+    left: 59%;
+}
+
+.spending_chart-days-sat {
+    position: absolute;
+    top: 61.5%;
+    left: 70%;
+}
+
+.spending_chart-days-sun {
+    position: absolute;
+    top: 61.5%;
+    left: 82%;
+
+}
+
+
+
+.spending_chart-mon {
+    position: absolute;
+    left: 9%;
+    top: 52%;
+    height: 50px;
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.spending_chart-mon::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-mon:hover:before {
+    --scale: 1;
+
+}
+
+
+.spending_chart-mon:hover {
+    opacity: 0.8;
+}
+
+.spending_chart-tue {
+    position: absolute;
+    left: 20.6%;
+    top: 43.5%;
+    height: 90px;
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spending_chart-tue:hover {
+    opacity: 0.8;
+}
+
+.spending_chart-tue::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-tue:hover:before {
+    --scale: 1;
+
+}
+
+.spending_chart-wed {
+    position: absolute;
+    left: 146px;
+    top: 154px;
+    height: 140px;
+    width: 40px;
+    background-color: hsl(186, 34%, 60%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spending_chart-wed:hover {
+    opacity: 0.8;
+}
+
+.spending_chart-wed::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-wed:hover:before {
+    --scale: 1;
+
+}
+
+.spending_chart-thu {
+    position: absolute;
+    left: 200px;
+    top: 213px;
+    height: 80px;
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spending_chart-thu:hover {
+    opacity: 0.8;
+}
+
+.spending_chart-thu::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-thu:hover:before {
+    --scale: 1;
+
+}
+
+.spending_chart-fri {
+    position: absolute;
+    left: 252px;
+    top: 237px;
+    height: 55px;
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spending_chart-fri:hover {
+    opacity: 0.8;
+}
+
+
+.spending_chart-fri::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-fri:hover:before {
+    --scale: 1;
+
+}
+
+.spending_chart-sat {
+    position: absolute;
+    left: 306px;
+    top: 172px;
+    height: 120px;
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spending_chart-sat:hover {
+    opacity: 0.8;
+}
+
+.spending_chart-sat::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-sat:hover:before {
+    --scale: 1;
+
+}
+
+.spending_chart-sun {
+    position: absolute;
+    left: 362px;
+    top: 227px;
+    height: 65px;
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spending_chart-sun:hover {
+    opacity: 0.8;
+}
+
+.spending_chart-sun::before {
+    content: attr(data-tooltip);
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(25, 47%, 15%);
+
+    color: hsl(33, 100%, 98%);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+
+}
+
+.spending_chart-sun:hover:before {
+    --scale: 1;
+
+}
+
+
+@media (max-width:480px) {
+
+    .my_balance {
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .spending {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+        margin-top: 30px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .spending h1 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .spending_this-month h2 {
+        position: absolute;
+        top: 77%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+    }
+
+    .spending_this-month h2 span {
+        font-size: 35px;
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+
+    .spending_last-month h2 {
+        position: absolute;
+        top: 88%;
+        left: 75%;
+        font-size: 10px;
+    }
+
+    .spending_last-month h2 span {
+        font-size: 18px;
+        position: absolute;
+        top: -25px;
+        left: 30%;
+    }
+
+    .spending_chart-days {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .spending_chart-mon {
+        position: absolute;
+        left: 9%;
+        top: 51%;
+        height: 50px;
+        width: 30px;
+    }
+
+    .spending_chart-tue {
+        position: absolute;
+        left: 21%;
+        top: 41%;
+        height: 90px;
+        width: 30px;
+    }
+
+    .spending_chart-wed {
+        position: absolute;
+        left: 99px;
+        top: 114px;
+        height: 140px;
+        width: 30px;
+
+    }
+
+    .spending_chart-thu {
+        position: absolute;
+        left: 45%;
+        top: 39.5%;
+        height: 95px;
+        width: 30px;
+
+    }
+
+    .spending_chart-fri {
+        position: absolute;
+        left: 57%;
+        top: 45.7%;
+        height: 70px;
+        width: 30px;
+
+    }
+
+    .spending_chart-sat {
+        position: absolute;
+        left: 69%;
+        top: 35.8%;
+        height: 110px;
+        width: 30px;
+    }
+
+    .spending_chart-sun {
+        position: absolute;
+        left: 81%;
+        top: 42%;
+        height: 85px;
+        width: 30px;
+    }
 
 }
